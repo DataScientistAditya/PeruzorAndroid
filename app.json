@@ -1,6 +1,14 @@
 {
   "expo": {
     "name": "peruzorapp",
+    "plugins": [[
+      "@react-native-voice/voice",
+      {
+        "microphonePermission": "Allow $(PERUZOR) to access the microphone",
+        "speechRecognitionPermission": "Allow $(PERUZOR) to securely recognize user speech"
+      }
+    ]
+    ],
     "slug": "peruzorapp",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -21,6 +29,7 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "MightyNeurons.peruzorapp",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
@@ -31,3 +40,5 @@
     }
   }
 }
+
+
